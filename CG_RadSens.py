@@ -2,7 +2,7 @@ import smbus
 import time
 
 # RadSens I2C Register Addresses
-RS_DEFAULT_I2C_ADDRESS = 0xff
+RS_DEFAULT_I2C_ADDRESS = 0x66 # The default adress for RadSens is 0x66
 RS_DEVICE_ID_RG = 0x00
 RS_FIRMWARE_VER_RG = 0x01
 RS_RAD_INTENSY_DYNAMIC_RG = 0x03
