@@ -38,14 +38,10 @@ def setup():
     print(f"\n\t HV generator state: {hv_generator_state}")
     print("\t setHVGeneratorState(false)... ")
 
-    radSens.set_hv_generator_state(False)
+    radSens.set_hv_generator_state(False) # It only gets measures with this value turned off
     hv_generator_state = radSens.get_hv_generator_state()
     print(f"\t HV generator state: {hv_generator_state}")
-    print("\t setHVGeneratorState(true)... ")
 
-    radSens.set_hv_generator_state(True)
-    hv_generator_state = radSens.get_hv_generator_state()
-    print(f"\t HV generator state: {hv_generator_state}")
     print("-------------------------------------")
     print("LED indication control example:\n")
 
